@@ -157,8 +157,6 @@ A sample CSV is in `docs/sample-pnc.csv`.
    const SUPPORTED_BANKS = ['PNC', 'Chase'];
    ```
 
-That's all — no other changes needed.
-
 ---
 
 ## Enabling AI Categorization (Google Gemini)
