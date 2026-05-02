@@ -1,0 +1,23 @@
+.txn-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--space-md);
+}
+
+.txn-filters .form-input,
+.txn-filters .form-select {
+  flex: 1;
+  min-width: 140px;
+  max-width: 200px;
+}
+
+.txn-filters input[placeholder="Search merchant or description…"] {
+  min-width: 220px;
+  flex: 2;
+}

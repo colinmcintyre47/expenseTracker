@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <!-- Updated to net9.0 — the only SDK installed on this machine -->
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ExpenseTracker.API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- MySQL via Entity Framework Core -->
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.3" />
+
+    <!-- JWT Bearer — version must match runtime (9.x) -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.3" />
+
+    <!-- CSV parsing -->
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+
+    <!-- PDF parsing — pure .NET library, no native binaries needed -->
+    <PackageReference Include="PdfPig" Version="0.1.9" />
+
+    <!-- BCrypt password hashing -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+
+    <!-- Swagger / OpenAPI -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+  </ItemGroup>
+
+</Project>

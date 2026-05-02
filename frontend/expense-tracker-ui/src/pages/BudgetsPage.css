@@ -1,0 +1,28 @@
+.budgets-page { display: flex; flex-direction: column; gap: var(--space-lg); }
+.budgets-header { display: flex; justify-content: space-between; align-items: center; }
+.budgets-month-picker { display: flex; gap: var(--space-sm); }
+.budgets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: var(--space-lg); }
+.budget-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md); }
+.budget-card-title { display: flex; align-items: center; gap: var(--space-xs); font-weight: 600; }
+.budget-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+/* Import modal styles from TransactionsPage */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200;
+}
+.modal {
+  background: var(--color-surface);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl);
+  width: 100%;
+  max-width: 380px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.modal h3 { font-size: 1rem; font-weight: 600; }
+.modal-actions { display: flex; gap: var(--space-sm); justify-content: flex-end; }

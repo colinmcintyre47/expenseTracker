@@ -1,0 +1,49 @@
+.analytics-page { display: flex; flex-direction: column; gap: var(--space-lg); }
+.analytics-loading { display: flex; justify-content: center; padding: var(--space-2xl); }
+.analytics-toolbar { display: flex; justify-content: space-between; align-items: center; }
+.analytics-tabs { display: flex; gap: 4px; background: var(--color-surface-raised); padding: 4px; border-radius: var(--border-radius); }
+.analytics-tab {
+  padding: 6px 16px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: transparent;
+  transition: all 0.15s;
+}
+.analytics-tab.active { background: var(--color-surface); color: var(--color-text); box-shadow: var(--shadow-sm); }
+.analytics-selectors { display: flex; gap: var(--space-sm); }
+
+.analytics-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+.analytics-stat {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-md) var(--space-lg);
+}
+.analytics-stat-label { font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.analytics-stat-value { font-size: 1.5rem; font-weight: 700; margin-top: 4px; }
+.analytics-stat-value.income { color: var(--color-success); }
+
+.analytics-grid { display: flex; flex-direction: column; gap: var(--space-lg); }
+.analytics-card-wide { width: 100%; }
+
+.analytics-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); align-items: start; }
+.analytics-category-list { display: flex; flex-direction: column; gap: var(--space-sm); }
+.analytics-category-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--color-border); }
+.analytics-category-row:last-child { border-bottom: none; }
+
+.analytics-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.analytics-table th { padding: 8px 12px; text-align: left; font-size: 0.75rem; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; border-bottom: 1px solid var(--color-border); }
+.analytics-table td { padding: 10px 12px; border-bottom: 1px solid var(--color-border); }
+.analytics-table tr:last-child td { border-bottom: none; }
+.text-right { text-align: right; }
+
+@media (max-width: 768px) {
+  .analytics-summary { grid-template-columns: 1fr 1fr; }
+  .analytics-two-col { grid-template-columns: 1fr; }
+}

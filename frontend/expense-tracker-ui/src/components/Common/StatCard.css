@@ -1,0 +1,39 @@
+.stat-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-card-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+}
+
+.stat-card-value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+  margin-bottom: var(--space-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-card-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.stat-card-trend {
+  margin-top: var(--space-xs);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.stat-card-trend.up { color: var(--color-error); }   /* Spending up = bad */
+.stat-card-trend.down { color: var(--color-success); } /* Spending down = good */

@@ -1,0 +1,35 @@
+# ===== .NET / C# =====
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.db
+*.db-journal
+
+# Secrets — never commit these
+**/appsettings.Development.json
+# Keep appsettings.json but make sure it has no real secrets
+# If it does, add: **/appsettings.json
+
+# EF Core migrations snapshot is intentionally kept (don't ignore Migrations/)
+
+# ===== Node / React =====
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+
+# Vite cache
+frontend/expense-tracker-ui/.vite/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
